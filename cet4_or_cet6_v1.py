@@ -34,7 +34,7 @@ def check_cet_id():
     try:
         url_content = requests.post(url, data=data).content
     except Exception, e:
-        "链接不上，你可以选择再试试。"+ str(e)
+        print "链接不上，你可以选择再试试。"+ str(e)
 
     if "ks_bh" not in url_content:
         print url_content
